@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- XML declaration for versions and character encoding-->
+
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9"> <!-- Root element for sitemap-->
+    <url> <!-- define a URL homepage-->
+        <loc>https://www.sals-stationery-blog.com.au/index.html</loc> 
+        <lastmod>2025-11-20</lastmod> <!-- last modified for this url-->
+        <changefreq>Monthly</changefreq> <!-- suggest search engines tp crawl monthly-->
+        <priority>1.0</priority> <!--Highest priority in sitemap-->
+    </url>
+
+    <url>
+        <loc>https://www.sals-stationery-blog.com.au/photos.html</loc> 
+        <lastmod>2025-11-20</lastmod> <!-- last modified for this url-->
+        <changefreq>Monthly</changefreq> <!-- suggest search engines tp crawl monthly-->
+    </url>
+
+     <url>
+        <loc>https://www.sals-stationery-blog.com.au/about.html</loc> 
+        <lastmod>2025-11-20</lastmod> <!-- last modified for this url-->
+    </url>
+
+    <url>
+        <loc>https://www.sals-stationery-blog.com.au/contact.html</loc> 
+        <lastmod>2025-11-20</lastmod> <!-- last modified for this url-->
+    </url>
+
+</urlset> <!-- end sitemap root -->

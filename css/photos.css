@@ -1,0 +1,70 @@
+/* Mobile First View */
+/* Photo Grid - using CSS Grid so each image occupies a uniform cell */
+
+body {
+    background-color: #e8e8e8ff;
+}
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    align-items: start;
+    margin: 0 0 5em;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+/* Each figure is a uniform grid cell */
+#gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin:1vw;
+    object-fit:cover;
+    display: block;
+}
+
+#gallery figcaption {
+    padding: 8px 0 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: #3A4F4F;
+}
+
+#title {
+    display:inline-block;
+    color: #5A8A8A;
+    text-align: left;
+    padding: 16px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+    #gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#gallery figure {
+    margin-right:1em;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+#gallery {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#gallery figure {
+    margin-right:2em;
+}
+}

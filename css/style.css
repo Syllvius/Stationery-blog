@@ -1,0 +1,208 @@
+* {
+box-sizing: border-box;
+}
+
+
+html {
+  margin: 0;
+  width: 100%;
+  align-items: center;
+}
+
+body {
+box-sizing: border-box;
+background-color: #FAF9F6;
+text-align: center;
+margin:0;
+height: auto;
+width: auto;
+}
+
+p {
+    font-family: 'calibri', sans-serif;
+    font-size: 1em;
+}
+
+.date {
+  font-style: italic;
+  font-size: small;
+}
+
+h1 {
+  font-family: 'Courier new', serif ;
+  margin: 20px 0 20px; /*changed*/
+  display: block;
+  font-size: 6vw; /*change according to validator, showing only one value */ 
+  padding: 20px;
+  
+
+}
+
+h2 {
+  font-family: 'courier new', sans-serif;
+  color:#3A4F4F;
+}
+
+li {
+  font-size: 1em;
+  font-weight:normal;
+  font-family: calibri, sans-serif;
+}
+
+section {
+  /*only present in index.html*/
+  /*display value omitted ref validator*/
+  align-items: center;
+  margin: 0;
+  padding: 0 0 2em;
+}
+
+
+/* -------------------------------------------------------------- */
+/* Mobile First View: in Harley's header.css */
+
+/* Style the header which contains the navigation links */
+header {
+    background-color: #7FB3B3;
+    overflow:hidden;
+
+  }
+  
+  /* Hide the checkbox which we use for the hamburger menu functionality */
+  #hamburger_checkbox {
+    display: none;
+  }
+  
+  /* Style the image we use as a label for the hamburger menu checkbox */
+  #hamburger_image {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 15%;
+    border-radius: 0.5em;
+    
+  }
+  
+  
+  /* Show or hide the navigation links depending on whether the hamburger menu checkbox is checked or not */
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
+    display: none;
+  }
+  
+  /* Style the heading */
+  h1 {
+    color: rgb(232, 232, 232);
+    font-family: 'Courier new' , serif;
+    float:left;
+    padding: 0 1em 0;
+    width: 100%;
+    ;
+  }
+  
+  nav {
+    display:block;
+    margin:2em 0em 0;
+    padding:0;
+    background-color: #e8e8e8ff;
+    border-radius: 2px;
+    font-family: 'courier new', serif;
+  }
+
+  /* Style the links inside the navigation bar */
+  nav a {
+    color: #000000;							
+    float: left;
+    font-size: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius:2px;
+  }
+
+  
+  /* Change the color of links on hover using mouse */
+  nav a:hover {
+    background-color: #FFB627;
+    color: white;
+  }
+  
+  /* Change the color of links on focus using tab key */
+  nav a:focus {
+    background-color:#E3DFDE;
+    color: #3A4F4F;
+    outline: none;
+    border-radius:2px;
+  }
+  
+  /* Change the color of the active/current link */
+  .active_nav {
+    background-color: #5A8A8A;
+    color: white;
+    border-radius:2px;
+    
+  }
+
+footer {
+  background-color: #3A4F4F;
+  color: white;
+	text-align: center;
+  font-size: 90%;
+  width: 100%;
+  position:absolute;
+  padding: 6em;
+}
+
+footer p {
+  font-family: 'courier new', monospace;
+  font-size:small
+}
+  
+   /* For desktop: */
+  @media only screen and (min-width: 768px) {
+    
+    /* Hide the hamburger menu image we use as a label for the hamburger menu checkbox */
+    #hamburger_image {
+      display: none;
+    }
+
+    /* Show the navigation links... even if the hamburger menu checkbox is not selected (menu open) */
+    input[id="hamburger_checkbox"]:not(:checked) + nav {
+      display:block
+    }
+
+    /* Style the Knitters heading */
+    h1 {
+      text-align: left;
+      width: 390px;
+      font-size:4vh;
+      margin-left: 0.5em
+    }
+
+    /* Style the navigation bar */
+    nav {
+      float: right;
+      margin:6em 0 0;
+      height:100%;
+
+    }
+
+    /* Style the links inside the navigation bar */
+    nav a {
+      width: auto;   
+      font-size: 17px; 
+    }
+
+    section {
+      display: block;
+      align-content: center;
+      width:auto;
+
+    }
+    main {
+      background-color:white;
+      display:block;
+    }
+    }

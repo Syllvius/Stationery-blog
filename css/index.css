@@ -1,0 +1,167 @@
+/* Mobile First View: */
+
+#main_image {
+	display: block;         
+    width: 100%;                
+    height: auto;           
+    object-fit: cover;       
+    margin: 0;  
+}
+
+h2 {
+	text-align:center;
+	line-height:1.5; 
+	font-size: 2vh;
+}
+
+article p {
+	text-align: center;
+}
+
+section {
+	/* mobile: stack content vertically so articles and aside are visible */
+	display: block;
+	background-color: #FAF9F6;
+	width: 100%;
+	margin: 0;
+	justify-content: center;
+
+}
+
+aside { 
+	display: block;
+	font-size: 0.9em;
+	font-family: calibri, sans-serif;
+	padding: 1rem;
+	text-align: center;
+	position: relative;
+	background-color: transparent;
+	color: #3A4F4F;
+	border: 0;
+	margin: 1rem 0;
+	width: 100%; 
+	box-sizing: border-box;
+	border-radius: 5px;
+	
+
+}
+
+aside a {
+	color: rgb(0, 0, 0); /* Text color for the links */
+	display: block;
+	padding: 1em; 
+	width: 100%; 
+	text-align: center;
+	font-family: 'courier new', monospace;
+	text-decoration: none;
+}
+
+/* Change the color of links on hover using mouse */
+  aside a:hover {
+    background-color: transparent;
+    color: #FFB627;
+  }
+  
+  /* Change the color of links on focus using tab key */
+  aside a:focus {
+    background-color:#FFB627;
+    color: #3A4F4F;
+	outline: none;
+    border-radius:2px;
+  }
+  
+  /* Change the color of the active/current link */
+  .active_nav {
+    background-color: rgb(43, 65, 65);
+    color: white;
+    border-radius:2px;
+  }
+
+
+article {
+	border-radius: 1em;
+	margin: 3em 1.5em 3em;
+	padding: 1em;
+	font-size: 1em;
+	text-align: center;
+	justify-content: center;
+	background-color: #e8e8e8ff;
+}
+
+#sidelinks {
+	grid-area: area3;
+}
+
+#greetings {
+	grid-area: area1;
+}
+
+#featured {
+	margin-bottom: 0%;
+	grid-area: area2;
+}
+
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+
+	main {
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	h2 {
+	font-size: 3vh;
+	}
+
+	/* Use grid layout on larger screens: image spans, content left, aside right */
+	section {
+		display: grid;
+		grid-template-columns: 2fr 1fr; /* flexible main column + fixed sidebar */
+		grid-template-areas:
+			'area0 area0'
+			'area1 area3'
+			'area2 area3';
+		gap: 1.5em;
+		align-items: start;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 5em 5em;
+	}
+
+	article {
+	border-radius: 1em;
+	margin: 1em;
+	padding: 1em;
+	font-size: 1em;
+	text-align: center;
+	box-sizing: border-box;
+	}
+
+	/* Hero image spans across both columns */
+	#main_image {
+		grid-column: 1 / -1;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		display: block;
+	}
+
+	
+	aside {
+		grid-area: area3;
+		width: 300px;
+		height: auto;
+		align-self: center;
+		justify-self: center;
+		box-sizing: border-box;
+		margin: 0;
+		grid-row: span 2;
+	}
+
+	/* Articles stack in the left column */
+	#greetings { grid-area: area1; }
+	#featured  { grid-area: area2; }
+
+}
