@@ -70,12 +70,6 @@ aside a {
     border-radius:2px;
   }
   
-  /* Change the color of the active/current link */
-  .active_nav {
-    background-color: rgb(43, 65, 65);
-    color: white;
-    border-radius:2px;
-  }
 
 
 article {
@@ -86,6 +80,7 @@ article {
 	text-align: center;
 	justify-content: center;
 	background-color: #e8e8e8ff;
+	border-style: groove;
 }
 
 #sidelinks {
