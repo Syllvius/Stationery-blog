@@ -45,7 +45,8 @@ button {
 }
 
 button:hover, button:focus {
-  filter: brightness(120%)
+  background-color:#3A4F4F;
+  color: white;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -75,3 +76,4 @@ button:hover, button:focus {
     width: 30%;
   }
 }
+
