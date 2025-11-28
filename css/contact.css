@@ -1,6 +1,5 @@
 body { 
-  background-color:#ffffff;
-;
+  background-color:#FAF9F6;
 }
 
 form {
@@ -46,8 +45,7 @@ button {
 }
 
 button:hover, button:focus {
-  filter: brightness(110%);
-  background-color: #3A4F4F;
+  filter: brightness(120%)
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
